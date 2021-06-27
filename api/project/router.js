@@ -1,7 +1,17 @@
 const router = require('express').Router()
 
+const Project = require('./model')
 
-router.use("*",(req,res,next)=>{
+
+router.get('/:project_id',(req,res,next)=>{
+    Project.getProjectById(req.params.project_id)
+    .then(resource =>{
+        res.status(200).json(resource)
+    })
+    .catch(next)
+})
+
+router.use("*",(req,res)=>{
     res.json({api:'up'})
 })
 
