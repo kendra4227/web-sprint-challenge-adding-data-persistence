@@ -1,5 +1,5 @@
 const express = require("express");
-const db = require("../models/resourceModel");
+const db = require("./model");
 const router = express.Router();
 const {validateResource} = require("../middleware/resourceMiddleware");
 
