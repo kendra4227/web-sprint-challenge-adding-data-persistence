@@ -8,14 +8,12 @@ const sharedConfig = {
 
 module.exports = {
   development: {
-    ...sharedConfig,
-    connection: { filename: './data/lambda.db3' },
-    seeds: { directory: './data/seeds' },
-    
-  },
-  testing: {
-    ...sharedConfig,
-    connection: { filename: './data/test.db3' },
-  },
-};
+    client: 'sqlite3',
+    useNullAsDefault: true,
+    connection: {
+  
+      filename: './data/lambda.db3'
+    }
+  }
+}
 
