@@ -11,6 +11,7 @@ module.exports = {
     ...sharedConfig,
     connection: { filename: './data/lambda.db3' },
     seeds: { directory: './data/seeds' },
+    
   },
   testing: {
     ...sharedConfig,
