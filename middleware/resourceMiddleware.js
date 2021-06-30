@@ -1,3 +1,4 @@
+
 function validateResource() {
     return (req, res, next) => {
         if(Object.keys(req.body).length === 0) {

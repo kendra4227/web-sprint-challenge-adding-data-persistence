@@ -1,7 +1,7 @@
 const express = require("express");
 const db = require("./model");
 const router = express.Router();
-const {validateResource} = require("../middleware/resourceMiddleware");
+const {validateResource} = require(".../middleware/resourceMiddleware");
 
 router.get('/', async (req, res, next) => {
    try{

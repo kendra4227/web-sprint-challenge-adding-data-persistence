@@ -1,7 +1,8 @@
-const db = require('.../data/dbConfig')
+const db = require("../../data/dbConfig")
 
 function getProjects(){
-    return db('projects');
+    const projects = db('projects')
+    return projects;
 }
 
 function getProjectById(project_id){
